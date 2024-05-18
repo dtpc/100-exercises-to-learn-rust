@@ -21,7 +21,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "rustc --version",
+	"postCreateCommand": "cargo install --locked workshop-runner",
 
 	// Configure tool-specific properties.
 	"customizations": {

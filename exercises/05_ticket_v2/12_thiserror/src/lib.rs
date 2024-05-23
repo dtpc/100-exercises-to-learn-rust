@@ -76,7 +76,7 @@ mod tests {
     #[test]
     fn title_cannot_be_longer_than_fifty_chars() {
         let err = Ticket::new(overly_long_title(), valid_description(), Status::ToDo).unwrap_err();
-        assert_eq!(err.to_string(), "Title cannot be longer than 50 characters");
+        assert_eq!(err.to_string(), "Title cannot be longer than 50 bytes");
     }
 
     #[test]
@@ -84,7 +84,7 @@ mod tests {
         let err = Ticket::new(valid_title(), overly_long_description(), Status::ToDo).unwrap_err();
         assert_eq!(
             err.to_string(),
-            "Description cannot be longer than 500 characters"
+            "Description cannot be longer than 500 bytes"
         );
     }
 }

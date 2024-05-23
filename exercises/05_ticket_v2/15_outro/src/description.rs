@@ -9,7 +9,7 @@ pub struct TicketDescription(String);
 pub enum TicketDescriptionError {
     #[error("The description cannot be empty")]
     DescriptionCannotBeEmpty,
-    #[error("The description cannot be longer than 500 characters")]
+    #[error("The description cannot be longer than 500 bytes")]
     DescriptionTooLong
 }
 

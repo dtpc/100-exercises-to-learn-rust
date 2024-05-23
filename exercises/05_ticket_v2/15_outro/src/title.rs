@@ -9,7 +9,7 @@ pub struct TicketTitle(String);
 pub enum TicketTitleError {
     #[error("The title cannot be empty")]
     TitleCannotBeEmpty,
-    #[error("The title cannot be longer than 50 characters")]
+    #[error("The title cannot be longer than 50 bytes")]
     TitleTooLong
 }
 

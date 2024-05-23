@@ -34,7 +34,7 @@
   - [Orphan rule](04_traits/02_orphan_rule.md)
   - [Operator overloading](04_traits/03_operator_overloading.md)
   - [Derive macros](04_traits/04_derive.md)
-  - [String slices](04_traits/05_str_slice.md)
+  - [String slices](04_traits/06_str_slice.md)
   - [`Deref` trait](04_traits/06_deref.md)
   - [`Sized` trait](04_traits/07_sized.md)
   - [`From` trait](04_traits/08_from.md)

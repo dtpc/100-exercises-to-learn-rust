@@ -20,6 +20,16 @@ pub enum Status {
     Done,
 }
 
+
+// impl IntoIterator for &TicketStore {
+//     type Item = &Ticket;
+//     type IntoIter = std::vec::IntoIter<&Self::Item>;
+//     fn into_iter(self) -> Self::IntoIter {
+//         self.tickets.iter()
+//     }
+// }
+
+
 impl TicketStore {
     pub fn new() -> Self {
         Self {
@@ -30,7 +40,12 @@ impl TicketStore {
     pub fn add_ticket(&mut self, ticket: Ticket) {
         self.tickets.push(ticket);
     }
+
+    pub fn iter(&self) -> std::slice::Iter<Ticket> {
+        self.tickets.iter()
+    }
 }
+
 
 #[cfg(test)]
 mod tests {

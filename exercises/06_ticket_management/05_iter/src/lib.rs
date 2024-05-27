@@ -59,13 +59,6 @@ mod tests {
         let ticket = Ticket {
             title: ticket_title(),
             description: ticket_description(),
-            status: Status::ToDo,
-        };
-        store.add_ticket(ticket);
-
-        let ticket = Ticket {
-            title: ticket_title(),
-            description: ticket_description(),
             status: Status::InProgress,
         };
         store.add_ticket(ticket);

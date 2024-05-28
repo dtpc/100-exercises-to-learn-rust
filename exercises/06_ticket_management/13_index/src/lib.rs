@@ -101,7 +101,7 @@ mod tests {
             description: ticket_description(),
         };
         let id2 = store.add_ticket(draft2);
-        let ticket2 = &store[&id2];
+        let _ticket2 = &store[&id2];
 
         assert_ne!(id1, id2);
     }
